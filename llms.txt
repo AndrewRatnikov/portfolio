@@ -1,0 +1,13 @@
+# Andrew Ratnikov
+
+> Full-stack developer specializing in AI automations and custom integrations for businesses that have outgrown no-code/low-code tools like Make and n8n.
+
+Andrew builds custom code (Node.js, Python, or whatever the job needs) when a no-code integration platform can't reach a system or hits a hard limit. He works with direct clients and agencies/dev shops looking to subcontract.
+
+## Site
+
+- [Homepage](https://andrewratnikov.pages.dev/): value proposition, services, project portfolio, about, and contact.
+
+## Contact
+
+- Email: ratnikov.am@gmail.com
