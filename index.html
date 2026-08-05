@@ -7,6 +7,11 @@
   <meta name="description" content="Andrew Ratnikov builds custom AI automations and integrations for businesses that have outgrown no-code tools like Make and n8n." data-i18n-attr="meta.description">
   <link rel="canonical" href="https://andrewratnikov.pages.dev/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/css/styles.css">
 
   <!-- Open Graph -->
@@ -67,7 +72,7 @@
       <nav class="site-nav" aria-label="Primary">
         <ul>
           <li><a href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#projects" data-i18n="nav.work">Work</a></li>
           <li><a href="#about" data-i18n="nav.about">About</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
@@ -83,27 +88,37 @@
   <main id="main">
     <section class="hero">
       <div class="wrap">
-        <h1 data-i18n="hero.headline">Full-stack development for AI automations and integrations no-code tools can't handle.</h1>
-        <p class="hero__sub" data-i18n="hero.sub">When Make or n8n hits a wall, I build the custom fix in Node, Python, or whatever the job needs.</p>
-        <a class="button button--primary" href="mailto:ratnikov.am@gmail.com" data-i18n="hero.cta">Email me</a>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Full-Stack Developer · AI &amp; Integrations</p>
+        <h1>
+          <span data-i18n="hero.headline1">Custom code when no-code hits its </span><span class="accent" data-i18n="hero.headline2">limits.</span>
+        </h1>
+        <p class="hero__sub" data-i18n="hero.sub">Andrew Ratnikov builds AI automations, custom integrations, and production-grade applications — the kind of work that starts where Make, n8n, and Zapier leave off.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="mailto:ratnikov.am@gmail.com" data-i18n="hero.cta">Get in touch</a>
+          <a class="button button--secondary" href="#projects" data-i18n="hero.ctaSecondary">View work</a>
+        </div>
       </div>
     </section>
 
     <section id="services" class="services">
       <div class="wrap">
-        <h2 data-i18n="services.heading">Services</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3 data-i18n="services.automation.title">AI automations</h3>
-            <p data-i18n="services.automation.desc">Custom workflows that use AI to handle tasks generic automation platforms can't — from data processing to intelligent decision-making.</p>
+        <p class="eyebrow" data-i18n="services.eyebrow">[ Services ]</p>
+        <h2 data-i18n="services.heading">What I build</h2>
+        <div class="service-grid">
+          <article class="service-card">
+            <p class="service-card__num">01</p>
+            <h3 data-i18n="services.automation.title">AI Automations</h3>
+            <p data-i18n="services.automation.desc">End-to-end pipelines that use LLMs and APIs to replace manual work — lead enrichment, document processing, classification, summarization, and structured data extraction at scale.</p>
           </article>
-          <article class="card">
-            <h3 data-i18n="services.rescue.title">No-code integration rescue</h3>
-            <p data-i18n="services.rescue.desc">When Make or n8n can't reach a system or hits a hard limit, I build the missing piece with custom code that plugs back into your existing setup.</p>
+          <article class="service-card">
+            <p class="service-card__num">02</p>
+            <h3 data-i18n="services.rescue.title">Integration Rescue</h3>
+            <p data-i18n="services.rescue.desc">When Make, n8n, or Zapier hit their ceiling, I step in with custom Node.js or Python code that handles the edge cases, scale, and business logic they can't.</p>
           </article>
-          <article class="card">
-            <h3 data-i18n="services.fullstack.title">Full-stack development</h3>
-            <p data-i18n="services.fullstack.desc">End-to-end web application development — backend services, APIs, and the front end that ties it together.</p>
+          <article class="service-card">
+            <p class="service-card__num">03</p>
+            <h3 data-i18n="services.fullstack.title">Full-Stack Development</h3>
+            <p data-i18n="services.fullstack.desc">Web applications, REST and webhook APIs, internal dashboards, and automation tooling — built to production standards from spec to deployed.</p>
           </article>
         </div>
       </div>
@@ -111,35 +126,74 @@
 
     <section id="projects" class="projects">
       <div class="wrap">
+        <p class="eyebrow" data-i18n="projects.eyebrow">[ Selected Work ]</p>
         <h2 data-i18n="projects.heading">Projects</h2>
-        <p class="projects__intro" data-i18n="projects.intro">A selection of pet projects, updated as new ones ship.</p>
-        <div class="card-grid" id="projects-grid">
+        <div class="project-grid" id="projects-grid">
           <!-- Rendered by js/main.js from js/i18n.js's projects data -->
         </div>
       </div>
     </section>
 
     <section id="about" class="about">
-      <div class="wrap">
-        <h2 data-i18n="about.heading">About</h2>
-        <p data-i18n="about.body">I'm Andrew Ratnikov, a full-stack developer who works with businesses to build the custom automations and integrations that off-the-shelf and no-code tools don't cover. I care about shipping things that work reliably, not just demos.</p>
+      <div class="wrap about__grid">
+        <div class="about__intro">
+          <p class="eyebrow" data-i18n="about.eyebrow">[ About ]</p>
+          <h2 data-i18n="about.heading">Andrew Ratnikov</h2>
+          <p class="badge badge--available"><span class="badge__dot" aria-hidden="true"></span><span data-i18n="about.badge">Currently available for new projects.</span></p>
+        </div>
+        <div class="about__body">
+          <p data-i18n="about.body1">I'm a full-stack developer focused on the messy middle layer of modern software stacks — the point where business logic outgrows what automation tools can handle and someone needs to write actual code.</p>
+          <p data-i18n="about.body2">I work with early-stage startups, digital agencies, and established businesses building automations, internal tools, and integrations meant to handle real production load. My clients range from individual founders to dev shops looking for a reliable technical subcontractor.</p>
+          <p data-i18n="about.body3">My stack centers on Node.js and Python for backend work, React for interfaces, and whatever data store or API the problem calls for. I take projects from rough spec to deployed and monitored.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer id="contact" class="site-footer">
     <div class="wrap">
-      <h2 class="visually-hidden" data-i18n="contact.heading">Contact</h2>
-      <a class="button button--primary" href="mailto:ratnikov.am@gmail.com" data-i18n="contact.cta">ratnikov.am@gmail.com</a>
+      <p class="eyebrow" data-i18n="contact.eyebrow">[ Contact ]</p>
+      <h2 data-i18n="contact.heading">Let's work together</h2>
+      <p class="contact__body" data-i18n="contact.body">Available for freelance and contract engagements. If you have a project in mind, a workflow that's hit a wall, or just want to talk through an idea — reach out directly.</p>
 
-      <ul class="social-links">
-        <li><a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME" rel="me noopener noreferrer" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/REPLACE_WITH_LINKEDIN_USERNAME" rel="me noopener noreferrer" target="_blank">LinkedIn</a></li>
-      </ul>
+      <div class="contact__grid">
+        <div>
+          <p class="label" data-i18n="contact.emailLabel">Email</p>
+          <a class="contact__email" href="mailto:ratnikov.am@gmail.com" data-i18n="contact.cta">ratnikov.am@gmail.com</a>
+        </div>
+        <div>
+          <p class="label" data-i18n="contact.linksLabel">Links</p>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME" rel="me noopener noreferrer" target="_blank">
+                <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                <span data-i18n="contact.github">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/REPLACE_WITH_LINKEDIN_USERNAME" rel="me noopener noreferrer" target="_blank">
+                <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.82 0H1.18C.53 0 0 .52 0 1.17v13.66C0 15.48.53 16 1.18 16h13.64c.65 0 1.18-.52 1.18-1.17V1.17C16 .52 15.47 0 14.82 0ZM4.75 13.63H2.37V6h2.38v7.63ZM3.56 4.96a1.38 1.38 0 1 1 0-2.76 1.38 1.38 0 0 1 0 2.76Zm10.07 8.67h-2.37V9.9c0-.87-.02-1.99-1.21-1.99-1.22 0-1.4.95-1.4 1.93v3.79H6.28V6h2.28v1.04h.03c.32-.6 1.09-1.24 2.25-1.24 2.4 0 2.85 1.58 2.85 3.64v4.19Z"/></svg>
+                <span data-i18n="contact.linkedin">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-      <p class="footer__meta">
-        <span data-i18n="footer.copyright">© 2026 Andrew Ratnikov</span>
-      </p>
+    <div class="site-footer__bar">
+      <div class="wrap site-footer__bar-inner">
+        <p class="footer__meta" data-i18n="footer.copyright">© 2026 Andrew Ratnikov — All rights reserved.</p>
+        <div class="footer__bar-links">
+          <a href="mailto:ratnikov.am@gmail.com">ratnikov.am@gmail.com</a>
+          <a href="https://github.com/REPLACE_WITH_GITHUB_USERNAME" rel="me noopener noreferrer" target="_blank" aria-label="GitHub">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/REPLACE_WITH_LINKEDIN_USERNAME" rel="me noopener noreferrer" target="_blank" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.82 0H1.18C.53 0 0 .52 0 1.17v13.66C0 15.48.53 16 1.18 16h13.64c.65 0 1.18-.52 1.18-1.17V1.17C16 .52 15.47 0 14.82 0ZM4.75 13.63H2.37V6h2.38v7.63ZM3.56 4.96a1.38 1.38 0 1 1 0-2.76 1.38 1.38 0 0 1 0 2.76Zm10.07 8.67h-2.37V9.9c0-.87-.02-1.99-1.21-1.99-1.22 0-1.4.95-1.4 1.93v3.79H6.28V6h2.28v1.04h.03c.32-.6 1.09-1.24 2.25-1.24 2.4 0 2.85 1.58 2.85 3.64v4.19Z"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 

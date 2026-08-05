@@ -17,7 +17,7 @@
     grid.textContent = "";
     PROJECTS.forEach(function (project) {
       var card = document.createElement("article");
-      card.className = "card";
+      card.className = "project-card";
 
       var title = document.createElement("h3");
       var link = document.createElement("a");
@@ -38,6 +38,12 @@
         tags.appendChild(li);
       });
       card.appendChild(tags);
+
+      var viewLink = document.createElement("a");
+      viewLink.className = "project-card__link";
+      viewLink.href = project.url;
+      viewLink.textContent = (I18N[lang]["projects.viewProject"] || "View project") + " →";
+      card.appendChild(viewLink);
 
       grid.appendChild(card);
     });
