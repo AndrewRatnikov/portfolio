@@ -87,17 +87,47 @@ const I18N = {
   }
 };
 
-// Placeholder entries — replace with real projects as they ship.
+// Real pet projects. Add a new one by pushing an object here.
 // Each project needs: id, url, tags, and a title/description per language.
 const PROJECTS = [
   {
-    id: "example-project",
-    url: "#",
-    tags: ["Node.js", "AI"],
-    title: { en: "Example project", es: "Proyecto de ejemplo" },
+    id: "ai-orchestrator",
+    url: "https://github.com/AndrewRatnikov/Multi-Agent-Orchestrator",
+    tags: ["Claude Code", "Multi-Agent", "AI"],
+    title: { en: "AI Orchestrator", es: "AI Orchestrator" },
     desc: {
-      en: "Placeholder entry — replace with a real pet project and link.",
-      es: "Entrada de ejemplo — sustitúyela por un proyecto real y su enlace."
+      en: "A spec-driven, multi-agent pipeline built on Claude Code that turns a plain-language feature request into a tested, ready-to-review branch — five specialized agents (Product, Architect, Tester, Reviewer, Coder) hand off work through durable, on-disk artifacts and review gates.",
+      es: "Un pipeline multiagente basado en Claude Code que convierte una solicitud de función en lenguaje natural en una rama probada y lista para revisar — cinco agentes especializados (Producto, Arquitecto, Tester, Revisor, Programador) se pasan el trabajo mediante artefactos persistentes y puntos de control."
+    }
+  },
+  {
+    id: "coin-collector-companion",
+    url: "https://coin-collector-companion-web-psi.vercel.app/",
+    tags: ["NestJS", "Next.js", "PostgreSQL"],
+    title: { en: "Coin Collector Companion", es: "Coin Collector Companion" },
+    desc: {
+      en: "A full-stack TypeScript monorepo for browsing and crowd-sourcing a numismatic coin catalog, with hand-rolled JWT auth (refresh-token rotation, reuse detection), a moderated submission pipeline, and 400+ unit/e2e tests deployed via CI to Render and Neon.",
+      es: "Un monorepo full-stack en TypeScript para explorar y ampliar de forma colaborativa un catálogo de monedas numismáticas, con autenticación JWT propia (rotación de refresh tokens, detección de reutilización), un flujo de envíos moderado y más de 400 tests unitarios/e2e desplegados vía CI en Render y Neon."
+    }
+  },
+  {
+    id: "personal-finance-tracker",
+    url: "https://minima-spend.vercel.app/",
+    tags: ["TanStack Start", "React", "Tailwind"],
+    title: { en: "Personal Finance Tracker", es: "Personal Finance Tracker" },
+    desc: {
+      en: "A personal finance tracking app exploring modern full-stack React patterns — file-based routing and server functions via TanStack Start, styled with Tailwind CSS and shadcn/ui.",
+      es: "Una app de seguimiento de finanzas personales que explora patrones full-stack modernos en React — enrutamiento basado en archivos y server functions con TanStack Start, con estilos en Tailwind CSS y shadcn/ui."
+    }
+  },
+  {
+    id: "reqlab",
+    url: "https://andrewratnikov.github.io/ReqLab/",
+    tags: ["Vue 3", "TypeScript"],
+    title: { en: "ReqLab", es: "ReqLab" },
+    desc: {
+      en: "A Postman-style HTTP client running entirely client-side — request composition, live response inspection, and centralized error/loading state handling, with CI/CD via GitHub Actions to GitHub Pages.",
+      es: "Un cliente HTTP al estilo Postman que funciona por completo en el navegador — composición de peticiones, inspección de respuestas en vivo y manejo centralizado de errores y estados de carga, con CI/CD vía GitHub Actions a GitHub Pages."
     }
   }
 ];
