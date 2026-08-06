@@ -2,6 +2,8 @@
 
 Personal portfolio / self-presentation site for Andrew Ratnikov, positioning him as a full-stack developer specializing in AI automations and custom integrations for cases where no-code/low-code tools (Make, n8n) fall short.
 
+Live: https://ratnikov.pages.dev/
+
 See [docs/prd.md](docs/prd.md) for the full product spec.
 
 ## Status
