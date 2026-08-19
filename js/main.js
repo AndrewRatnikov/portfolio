@@ -29,6 +29,8 @@
       var title = document.createElement("h3");
       var link = document.createElement("a");
       link.href = project.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
       link.textContent = project.title[lang];
       title.appendChild(link);
       card.appendChild(title);
@@ -49,6 +51,8 @@
       var viewLink = document.createElement("a");
       viewLink.className = "project-card__link";
       viewLink.href = project.url;
+      viewLink.target = "_blank";
+      viewLink.rel = "noopener noreferrer";
       viewLink.textContent = (I18N[lang]["projects.viewProject"] || "View project") + " →";
       card.appendChild(viewLink);
 
