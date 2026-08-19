@@ -91,6 +91,16 @@ const I18N = {
 // Each project needs: id, url, tags, and a title/description per language.
 const PROJECTS = [
   {
+    id: "n8n-google-maps-platform",
+    url: "https://github.com/AndrewRatnikov/n8n-nodes-google-maps-platform",
+    tags: ["n8n", "TypeScript", "npm Package"],
+    title: { en: "Google Maps for n8n", es: "Google Maps para n8n" },
+    desc: {
+      en: "A published n8n community node for Google Maps Platform — Geocoding, Directions, Distance Matrix, and Timezone lookups — built on Google's current Routes API rather than the legacy endpoints it replaced. Handles per-host auth switching (query-param vs. header keys), Google's HTTP-200-wrapped error responses, and Route Matrix's index-based results re-joined against the original request data, backed by a unit-tested response-shaping layer.",
+      es: "Un nodo comunitario de n8n publicado para Google Maps Platform — geocodificación, direcciones, matriz de distancias y zona horaria — construido sobre la Routes API actual de Google en lugar de los endpoints heredados que reemplazó. Maneja el cambio de autenticación según el host (clave por parámetro de consulta o por cabecera), las respuestas de error de Google envueltas en HTTP 200, y los resultados de Route Matrix basados en índices, reconciliados con los datos originales de la solicitud, respaldado por una capa de transformación de respuestas con tests unitarios."
+    }
+  },
+  {
     id: "ai-orchestrator",
     url: "https://github.com/AndrewRatnikov/Multi-Agent-Orchestrator",
     tags: ["Claude Code", "Multi-Agent", "AI"],
