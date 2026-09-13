@@ -91,6 +91,16 @@ const I18N = {
 // Each project needs: id, url, tags, and a title/description per language.
 const PROJECTS = [
   {
+    id: "n8n-docusign-connect",
+    url: "https://github.com/AndrewRatnikov/n8n-nodes-docusign-connect",
+    tags: ["n8n", "TypeScript", "JWT Auth"],
+    title: { en: "DocuSign for n8n", es: "DocuSign para n8n" },
+    desc: {
+      en: "An n8n community node for the DocuSign eSignature API — send envelopes from templates, track their status, and download signed PDFs — also exposed as a tool for n8n AI Agents. Implements server-to-server JWT Grant auth with a friendly recovery path for the one-time consent step, and auto-discovers each account's region-specific API host, working around two undocumented n8n internals issues traced through n8n's own source.",
+      es: "Un nodo comunitario de n8n para la API de eSignature de DocuSign — envía sobres desde plantillas, consulta su estado y descarga los PDF firmados — también disponible como herramienta para los AI Agents de n8n. Implementa autenticación JWT Grant de servidor a servidor con una vía de recuperación clara para el paso único de consentimiento, y descubre automáticamente el host de API regional de cada cuenta, sorteando dos problemas no documentados de n8n rastreados en su propio código fuente."
+    }
+  },
+  {
     id: "n8n-google-maps-platform",
     url: "https://github.com/AndrewRatnikov/n8n-nodes-google-maps-platform",
     tags: ["n8n", "TypeScript", "npm Package"],
